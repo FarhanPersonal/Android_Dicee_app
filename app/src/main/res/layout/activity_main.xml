@@ -14,23 +14,23 @@
     tools:context=".MainActivity">
 
 
-    <RelativeLayout
-        android:layout_width="373dp"
-        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/image_logo"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="false"
             app:srcCompat="@drawable/dicee_logo" />
-    </RelativeLayout>
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="371dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="32dp">
 
         <ImageView
             android:id="@+id/image_leftDice"
@@ -41,7 +41,7 @@
 
         <ImageView
             android:id="@+id/imageView_rightDice"
-            android:layout_width="197dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/dice1" />

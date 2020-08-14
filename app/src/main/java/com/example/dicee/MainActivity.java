@@ -25,23 +25,16 @@ public class MainActivity extends AppCompatActivity {
         final ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
         final ImageView rightDice = (ImageView)findViewById(R.id.imageView_rightDice);
 
-        final int[] diceArray = {R.drawable.dice1,
-                R.drawable.dice2,
-                R.drawable.dice3,
+        final int[] diceArray = {R.drawable.dice1, R.drawable.dice2, R.drawable.dice3,
                 R.drawable.dice4, R.drawable.dice5, R.drawable.dice6};
 
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-//                Log.d("Dicee", "Hello");
-
                 Random randomNum = new Random();
-
                 int randomNumberForLeftDice = randomNum.nextInt(6);
                 int randomNumberForRightDice = randomNum.nextInt(6);
-
-//                Log.d("Dicee", "The random randomNumberForLeftDice is: " + randomNumberForLeftDice);
 
                 leftDice.setImageResource(diceArray[randomNumberForLeftDice]);
                 rightDice.setImageResource(diceArray[randomNumberForRightDice]);
